@@ -78,13 +78,14 @@ const database = getDatabase(app);
 
 	// document.getElementById('book').addEventListener('click', () => {writeUser("2","TiDz","tidz@ti.com","22");}, true);
 	// document.getElementById('book').addEventListener('click', () => {readUser("3");}, true);
-	document.getElementById('submit').addEventListener('click', () => {
+	document.getElementById('submit').addEventListener('click', async () => {
 		if(validateForm()){
 			var booking_in4 = document.getElementById('bookingform');
 			var booking_data = new FormData(booking_in4);
 			var arr = Array.from(booking_data.entries());
 			var khoa = document.getElementById('khoa').value;
-			insertNewBooking(arr[0][1],arr[1][1],arr[2][1],arr[3][1],arr[4][1],arr[5][1],arr[6][1],arr[7][1],khoa);
+			await insertNewBooking(arr[0][1],arr[1][1],arr[2][1],arr[3][1],arr[4][1],arr[5][1],arr[6][1],arr[7][1],khoa);
+			window.location.href = "html/submit.html";
 		}
 	}, true);
 })();
