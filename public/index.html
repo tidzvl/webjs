@@ -11,7 +11,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>IT HOPITAL</title>
+    <title>IT HOSPITAL</title>
 
     <meta name="description" content="" />
 
@@ -22,7 +22,6 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet" />
 
-    <!-- <link rel="stylesheet" href="fonts/boxicon.css" /> -->
 
     <!-- Core CSS -->
     <link rel="stylesheet" href="css/core.css" />
@@ -30,8 +29,8 @@
     <link rel="stylesheet" href="css/front-page.css" />
     <!-- Page CSS -->
     <link rel="stylesheet" href="css/landing-page.css" />
-    <!-- <script src="js/app.js"></script> -->
-    <!-- <script src="js/firebase.js"></script> -->
+
+    <!-- Module -->
     <script src="js/firebase.js" type = "module"></script>
 
 
@@ -39,18 +38,15 @@
 
   <body>
 
-    <!-- Navbar: Start -->
     <nav class="layout-navbar">
       <div class="container">
         <div class="navbar navbar-expand-lg landing-navbar px-3">
           <!-- Menu logo wrapper: Start -->
           <div class="navbar-brand">
             <a href="index.html" class="app-brand-link">
-              <span class="app-brand-text demo menu-text fw-bold ms-2 ps-1">IT HOPITAL</span>
+              <span class="app-brand-text demo menu-text fw-bold ms-2 ps-1">IT HOSPITAL</span>
             </a>
           </div>
-          <!-- Menu logo wrapper: End -->
-          <!-- Menu wrapper: Start -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li>
@@ -62,25 +58,18 @@
             </ul>
           </div>
           <div class="landing-menu-overlay d-lg-none"></div>
-          <!-- Menu wrapper: End -->
-          <!-- Toolbar: Start -->
           <ul class="navbar-nav flex-row align-items-center ms-auto">
-            <!-- navbar button: Start -->
             <li>
               <a  class="btn btn-primary" target="_blank"
                 ><span class="tf-icons bx bx-user me-md-1"></span
                 ><span class="d-none d-md-block">Login</span></a
               >
             </li>
-            <!-- navbar button: End -->
           </ul>
-          <!-- Toolbar: End -->
         </div>
       </div>
     </nav>
-    <!-- Navbar: End -->
 
-    <!-- Sections:Start -->
 
     <div data-bs-spy="scroll" class="scrollspy-example">
       <!-- Hero: Start -->
@@ -94,16 +83,12 @@
                 for improve my profit ^^ ty.
               </h2>
               <div class="landing-hero-btn d-inline-block position-relative">
-                <a id="book" href="#" class="btn btn-primary" >Đặt lịch khám bệnh</a>
+                <a id="book" href="booking.html" class="btn btn-primary" >Đặt lịch khám bệnh</a>
               </div>
             </div>
           </div>
         </div>
-        <!-- <div class="landing-hero-blank"></div> -->
       </section>
-      <!-- Hero: End -->
-
-      <!-- Useful features: Start -->
       <section id="landingFeatures" class="section-py landing-features">
         <div class="container">
           <div class="text-center mb-3 pb-1">
@@ -142,6 +127,5 @@
           </div>
         </div>
       </section>
-      <!-- Useful features: End -->
   </body>
 </html>
